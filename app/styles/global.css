@@ -1,0 +1,61 @@
+:root {
+  --color-foreground: hsl(0, 0%, 7%);
+  --color-background: hsl(0, 0%, 100%);
+  --color-links: hsl(213, 100%, 52%);
+  --color-links-hover: hsl(213, 100%, 43%);
+  --color-border: hsl(0, 0%, 82%);
+  --font-body: -apple-system, "Segoe UI", Helvetica Neue, Helvetica, Roboto,
+    Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:-moz-focusring {
+  outline: auto;
+}
+
+.card {
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  width: 10rem;
+  height: 3rem;
+  background-color: #d4cfd2;
+  border-radius: 10px;
+  margin: 20px auto;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: #d887b8;
+  outline: 2px solid #111111;
+}
+
+.selected-card {
+  background-color: #e287be;
+  outline: 2px solid #111111;
+}
+
+.setting-card {
+  width: 20rem;
+  -moz-box-shadow:-1px 10px 20px #333333; -webkit-box-shadow:-1px 10px 20px #cccccc; box-shadow:-1px 10px 20px #c2c2c2;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.setting{
+  width: 100%;
+  display: flex;
+}
