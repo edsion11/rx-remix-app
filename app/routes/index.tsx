@@ -4,7 +4,7 @@ import { useLoaderData, json, Link } from "remix";
 import { Card } from "~/components/card";
 import { SettingCard } from "~/components/settingCard";
 import { map } from "rxjs";
-import { SettingService, StoreContext } from "./store";
+import { SettingService, StoreContext } from "../store/store";
 
 export let loader: LoaderFunction = () => {
   return json({ name: "edsion" });
@@ -23,7 +23,6 @@ function Setting() {
     versionList,
     specList,
     selectedDispatch,
-    select$,
   } = useContext(StoreContext);
   const { version, color, wheel, interior, optional } = selectedStore.current;
   return (
@@ -95,11 +94,12 @@ function Setting() {
 }
 
 export default function Index() {
-  let data = useLoaderData<any>();
-  console.log(data)
+  // return (
+  //   <StoreContext.Provider value={SettingService()}>
+  //     <Setting/>
+  //   </StoreContext.Provider>
+  // );
   return (
-    <StoreContext.Provider value={SettingService()}>
-      <Setting/>
-    </StoreContext.Provider>
-  );
+    <p>hello</p>
+  )
 }
