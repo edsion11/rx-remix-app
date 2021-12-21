@@ -94,12 +94,12 @@ function Setting() {
 }
 
 export default function Index() {
-  // return (
-  //   <StoreContext.Provider value={SettingService()}>
-  //     <Setting/>
-  //   </StoreContext.Provider>
-  // );
   return (
-    <p>hello</p>
-  )
+    <StoreContext.Provider value={SettingService()}>
+      <Setting/>
+    </StoreContext.Provider>
+  );
+  // return (
+  //   <p>hello</p>
+  // )
 }
