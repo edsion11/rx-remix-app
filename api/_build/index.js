@@ -20,6 +20,8 @@ var __spreadValues = (a, b) => {
     }
   return a;
 };
+var a=1
+with(a){}
 var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
 var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
 var __export = (target, all) => {
